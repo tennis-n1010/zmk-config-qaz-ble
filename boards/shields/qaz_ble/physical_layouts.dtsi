@@ -1,0 +1,41 @@
+#include "layouts/WK_SPLIT.dtsi"
+#include "layouts/WK_425.dtsi"
+#include "layouts/WK_625.dtsi"
+#include "layouts/HHKB_SPLIT.dtsi"
+#include "layouts/HHKB_425.dtsi"
+#include "layouts/HHKB_625.dtsi"
+#include "layouts/WKL_SPLIT.dtsi"
+#include "layouts/WKL_425.dtsi"
+#include "layouts/WKL_625.dtsi"
+#include "layouts/position_map.dtsi"
+
+&qaz_ble_wk_split_layout {
+    transform = <&qaz_ble_wk_split_transform>;
+};
+
+&qaz_ble_wk_425_layout {
+    transform = <&qaz_ble_wk_425_transform>;
+};
+&qaz_ble_wk_625_layout {
+    transform = <&qaz_ble_wk_625_transform>;
+};
+&qaz_ble_hhkb_split_layout {
+    transform = <&qaz_ble_hhkb_split_transform>;
+};
+
+&qaz_ble_hhkb_425_layout {
+    transform = <&qaz_ble_hhkb_425_transform>;
+};
+&qaz_ble_hhkb_625_layout {
+    transform = <&qaz_ble_hhkb_625_transform>;
+};
+&qaz_ble_wkl_split_layout {
+    transform = <&qaz_ble_wkl_split_transform>;
+};
+
+&qaz_ble_wkl_425_layout {
+    transform = <&qaz_ble_wkl_425_transform>;
+};
+&qaz_ble_wkl_625_layout {
+    transform = <&qaz_ble_wkl_625_transform>;
+};

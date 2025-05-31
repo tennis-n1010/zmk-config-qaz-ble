@@ -1,0 +1,79 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <0 1>;
+        };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <8 9>;
+        };
+
+        command+lshift {
+            bindings = <&kp LG(LSHFT)>;
+            key-positions = <20 30>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <7 8>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &kp Q    &kp W    &kp E    &kp R    &kp T    &kp Y    &kp U    &kp I    &kp O    &kp P
+                &kp A    &kp S    &kp D    &kp F    &kp G    &kp H    &kp J    &kp K    &kp L    &kp RET
+                &kp Z    &kp X    &kp C    &kp V    &kp B    &kp N    &kp M    &mt PERIOD COMMA    &kp RSHFT
+                &kp LCTRL    &kp LGUI    &kp LALT   &lt 1 SPACE   &lt 2 SPACE    &kp RALT    &kp RGUI    &kp RCTRL
+                &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2
+            >;
+        };
+        layer_2 {
+            bindings = <
+                &trans    &trans    &kp UP_ARROW    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+                &trans    &kp LEFT_ARROW    &kp DOWN_ARROW    &kp RIGHT_ARROW    &trans    &trans    &trans    &trans    &trans    &trans
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+                &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2
+            >;
+        };
+        layer_3 {
+            bindings = <
+                &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp NUMBER_0
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+                &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2 
+            >;
+        };
+        layer_4 {
+            bindings = <
+                &kp Q    &kp W    &kp E    &kp R    &kp T    &kp Y    &kp U    &kp I    &kp O    &kp P
+                &kp A    &kp S    &kp D    &kp F    &kp G    &kp H    &kp J    &kp K    &kp L    &kp RET
+                &kp Z    &kp X    &kp C    &kp V    &kp B    &kp N    &kp M    &kp COMMA    &kp RSHFT
+                &kp LCTRL    &kp LGUI    &kp LALT    &kp SPACE    &kp SPACE    &kp RALT    &kp RGUI    &kp RCTRL
+                &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2
+            >;
+        };
+        layer_5 {
+            bindings = <
+                &kp Q    &kp W    &kp E    &kp R    &kp T    &kp Y    &kp U    &kp I    &kp O    &kp P
+                &kp A    &kp S    &kp D    &kp F    &kp G    &kp H    &kp J    &kp K    &kp L    &kp RET
+                &kp Z    &kp X    &kp C    &kp V    &kp B    &kp N    &kp M    &kp COMMA    &kp RSHFT
+                &kp LCTRL    &kp LGUI    &kp LALT    &kp SPACE    &kp SPACE    &kp RALT    &kp RGUI    &kp RCTRL
+                &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2
+            >;
+        };
+    };
+ };
