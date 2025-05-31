@@ -1,3 +1,3 @@
 # No whitespace after the comma or in your keyboard name!
-config SHIELD_TEST01
-    def_bool $(shields_list_contains,test01)
+config SHIELD_QAZ_BLE
+    def_bool $(shields_list_contains,qaz_ble)
