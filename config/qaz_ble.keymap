@@ -40,6 +40,7 @@
             #binding-cells = <0>;
             bindings = <&mo 1>, <&kp LALT>;
             mods = <(MOD_LCTL|MOD_LGUI|MOD_LSFT|MOD_RCTL|MOD_RGUI|MOD_RSFT)>;
+            keep-mods = <(MOD_LCTL|MOD_LGUI|MOD_LSFT|MOD_RCTL|MOD_RGUI|MOD_RSFT)>;
         };
         altmo3: alt_mo3 {
             compatible = "zmk,behavior-mod-morph";
