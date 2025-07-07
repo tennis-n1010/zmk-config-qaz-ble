@@ -15,15 +15,22 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <8 9>;
         };
-
-        command+lshift {
-            bindings = <&kp LG(LSHFT)>;
-            key-positions = <20 30>;
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <18 19>;
+        };
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <17 18>;
         };
 
         minus {
             bindings = <&kp MINUS>;
             key-positions = <7 8>;
+        };
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1 2>;
         };
     };
 
@@ -63,8 +70,8 @@
         layer_4 {
             display-name = "Symbol1";
             bindings = <
-                &kp TAB    &trans    &trans    &trans    &trans    &trans    &trans    &kp LEFT_BRACKET    &kp RIGHT_BRACKET    &kp BACKSLASH
-                &kp CAPS    &trans    &trans    &trans    &trans    &trans    &trans    &kp SEMICOLON    &kp SINGLE_QUOTE    &kp RET
+                &kp GRAVE    &trans    &trans    &trans    &trans    &trans    &trans    &kp LEFT_BRACKET    &kp RIGHT_BRACKET    &kp BACKSLASH
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &kp SEMICOLON    &kp SINGLE_QUOTE    &kp RET
                 &kp LSHIFT    &trans    &trans    &trans    &trans    &kp COMMA    &kp PERIOD    &kp SLASH    &mo 4
                 &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
                 &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2
