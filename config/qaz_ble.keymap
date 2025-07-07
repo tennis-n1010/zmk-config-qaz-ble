@@ -65,7 +65,7 @@
             bindings = <
                 &kp TAB    &trans    &trans    &trans    &trans    &trans    &trans    &kp LEFT_BRACKET    &kp RIGHT_BRACKET    &kp BACKSLASH
                 &kp CAPS    &trans    &trans    &trans    &trans    &trans    &trans    &kp SEMICOLON    &kp SINGLE_QUOTE    &kp RET
-                &kp LSHIFT    &trans    &trans    &trans    &trans    &kp COMMA    &kp PERIOD    &kp SLASH    &ml 4
+                &kp LSHIFT    &trans    &trans    &trans    &trans    &kp COMMA    &kp PERIOD    &kp SLASH    &mo 4
                 &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
                 &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2
             >;
