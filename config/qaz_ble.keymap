@@ -51,10 +51,34 @@
             mods = <(MOD_LCTL|MOD_LGUI|MOD_LSFT|MOD_RCTL|MOD_RGUI|MOD_RSFT)>;
             keep-mods = <(MOD_LCTL|MOD_LGUI|MOD_LSFT|MOD_RCTL|MOD_RGUI|MOD_RSFT)>;
         };
-            bspc_del: backspace_delete {
+        bspc_del: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        lclk_mvl: left_click_move_left {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&mkp LCLK>, <&mmv MOVE_LEFT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        mclk_mvd: middle_click_move_down {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&mkp MCLK>, <&mmv MOVE_DOWN>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        rclk_mvr: right_click_move_right {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&mkp RCLK>, <&mmv MOVE_RIGHT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        scrlup_mvu: scroll_up_move_up {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&mmv MOVE_UP>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
@@ -75,9 +99,9 @@
         layer_2 {
             display-name = "Mouse&Arrow";
             bindings = <
-                &kp TAB    &trans    &kp UP_ARROW    &trans    &trans    &trans    &trans    &msc SCRL_UP    &trans    &trans
-                &kp CAPS    &kp LEFT_ARROW    &kp DOWN_ARROW    &kp RIGHT_ARROW    &trans    &trans    &mkp LCLK    &mkp MCLK    &mkp RCLK    &trans
-                &kp LSHIFT    &trans    &trans    &trans    &trans    &trans    &mkp MB4    &msc SCRL_DOWN    &mkp MB5
+                &kp TAB    &trans    &kp UP_ARROW    &trans    &trans    &trans    &trans    &scrlup_mvu    &trans    &trans
+                &kp CAPS    &kp LEFT_ARROW    &kp DOWN_ARROW    &kp RIGHT_ARROW    &trans    &trans    &lclk_mvl    &mclk_mvd    &rclk_mvr    &trans
+                &kp LSHIFT    &trans    &trans    &trans    &trans    &mkp MB4    &msc SCRL_DOWN    &mkp MB5    &trans
                 &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
                 &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2
             >;
