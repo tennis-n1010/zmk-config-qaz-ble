@@ -28,11 +28,6 @@
         };
         minus {
             bindings = <&kp MINUS>;
-            layers = <3 4>;
-            key-positions = <7 8>;
-        };
-        minus {
-            bindings = <&kp MINUS>;
             key-positions = <7 8>;
         };
         escape {
