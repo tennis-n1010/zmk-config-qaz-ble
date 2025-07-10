@@ -36,6 +36,9 @@
     };
 
     behaviors {
+        &mmv {
+            acceleration-exponent = <2>;
+        };
         mm_mo1_alt: mm_mo1_alt {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
