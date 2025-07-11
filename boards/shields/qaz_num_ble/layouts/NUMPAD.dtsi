@@ -47,7 +47,6 @@
     qaz_num_ble_numpad_posmap: numpad {
         physical-layout = <&qaz_num_ble_numpad_layout>;
         positions
-            = < 11 12 13 14 >
-            , < 15 16 >;
+            = < 7 14 15 >;
     };
 };
