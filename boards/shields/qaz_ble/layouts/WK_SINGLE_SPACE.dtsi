@@ -49,7 +49,7 @@
     };
     qaz_ble_wk_single_space_transform: qaz_ble_wk_single_space_transform {
         compatible = "zmk,matrix-transform";
-        rows       = <5>;
+        rows       = <11>;
         columns    = <11>;
         map = <
             /* row-0 */ RC(1,0)RC(1,2) RC(1,3) RC(1,4) RC(1,5) RC(1,6) RC(1,7) RC(1,8) RC(1,9) RC(1,10)
