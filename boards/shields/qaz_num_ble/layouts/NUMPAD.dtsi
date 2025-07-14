@@ -26,7 +26,6 @@
             , <&key_physical_attrs   0   0  100  400       0     0     0>
             , <&key_physical_attrs 100 100  200  400       0     0     0>
             , <&key_physical_attrs   0   0  300  400       0     0     0>
-
             ;
     };
     qaz_num_ble_numpad_transform: qaz_num_ble_numpad_transform {
