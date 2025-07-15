@@ -3,9 +3,9 @@
 #include "layouts/position_map.dtsi"
 
 &qaz_num_ble_numpad_layout {
-    transform = <&qaz_num_ble_numpad_transform>;
+    transform = <&qaz_num_ble_default_transform>;
 };
 
 &qaz_num_ble_macropad_layout {
-    transform = <&qaz_num_ble_macropad_transform>;
+    transform = <&qaz_num_ble_default_transform>;
 };
