@@ -15,5 +15,8 @@
           , < &xiao_d 4 GPIO_ACTIVE_HIGH >
           ; // addressable space is 5x5, (minus paired values)
     };
+    studio_usb: studio_usb {
+        compatible = "zmk,studio-rpc-usb-uart";
+    };
 };
 &xiao_serial { status = "disabled"; };

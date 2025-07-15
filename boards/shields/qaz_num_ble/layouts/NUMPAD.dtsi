@@ -6,6 +6,8 @@
         compatible = "zmk,physical-layout";
         display-name = "NUMPAD";
         transform = <&qaz_num_ble_numpad_transform>;
+        kscan = <&kscan0>;
+        
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0    0       0     0     0>
             , <&key_physical_attrs 100 100  100    0       0     0     0>
