@@ -4,10 +4,9 @@
 / {
     kscan0: kscan_0 {
         compatible      = "zmk,kscan-gpio-charlieplex";
-
-        #ifdef CONFIG_BOARD_SEEEDUINO_XIAO_BLE
+        wakeup-source;
         interrupt-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) >;
-        #endif
+
         
         gpios
           = < &gpio0  2 GPIO_ACTIVE_HIGH >
@@ -36,10 +35,15 @@
             /* tactile switches */ RC(0,8) RC(0,9) RC(0,10)
         >;
     };
+    studio_usb: studio_usb {
+        compatible = "zmk,studio-rpc-usb-uart";
+    };
+
 
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &physical_layout4;
+        zmk,studio-rpc = &studio_usb;
     };
 };
 &xiao_serial { status = "disabled"; };
