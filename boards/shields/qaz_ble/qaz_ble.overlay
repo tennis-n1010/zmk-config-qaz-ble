@@ -18,9 +18,10 @@
           , < &xiao_d 9 GPIO_ACTIVE_HIGH >
           , < &xiao_d 10 GPIO_ACTIVE_HIGH >
           ; // addressable space is 11x11, (minus paired values)
+          wakeup-source;
     };
 
-    qaz_ble_wk_defaoult_transform: qaz_ble_wk_defaoult_transform {
+    default_transform: keymap_transform {
         compatible = "zmk,matrix-transform";
         rows       = <11>;
         columns    = <11>;
