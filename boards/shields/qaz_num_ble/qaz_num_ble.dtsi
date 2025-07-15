@@ -77,9 +77,7 @@
         qaz_num_ble_macropad_posmap: qaz_num_ble_macropad_posmap {
         physical-layout = <&qaz_num_ble_macropad_layout>;
         positions
-                = <15 16 11 17>
-                , <19>
-                ;
+                = < 7 15 16>;
         };
     };
 };
