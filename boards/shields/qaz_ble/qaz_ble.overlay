@@ -36,5 +36,10 @@
             /* tactile switches */ RC(0,8) RC(0,9) RC(0,10)
         >;
     };
+
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,physical-layout = &physical_layout4;
+    };
 };
 &xiao_serial { status = "disabled"; };
