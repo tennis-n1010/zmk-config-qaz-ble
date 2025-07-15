@@ -7,6 +7,5 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &qaz_num_ble_macropad_layout;
-        zmk,studio-rpc = &studio_usb;
     };
 };
