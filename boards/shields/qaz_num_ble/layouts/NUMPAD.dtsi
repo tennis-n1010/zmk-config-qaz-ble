@@ -44,7 +44,7 @@
 };
 
 &layouts_qaz_num_ble_position_map {
-    qaz_num_ble_numpad_posmap: numpad {
+    qaz_num_ble_numpad_posmap: qaz_num_ble_numpad_posmap {
         physical-layout = <&qaz_num_ble_numpad_layout>;
         positions
                 = < 0  1  2  3>
