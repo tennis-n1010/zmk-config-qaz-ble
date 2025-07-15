@@ -6,6 +6,6 @@
 
     chosen {
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &qaz_num_ble_numpad_layout;
+        zmk,physical-layout = &qaz_num_ble_macropad_layout;
     };
 };
