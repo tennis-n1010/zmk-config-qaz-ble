@@ -1,7 +1,7 @@
 #include <physical_layouts.dtsi>
 
 / {
-    physical_layout0: physical_layout_0 {
+    physical_layout0: physical_layout0 {
         compatible = "zmk,physical-layout";
         display-name = "HHKB_DOUBLE_SPACE";
         kscan = <&kscan0>;
@@ -49,7 +49,7 @@
             ;
     };
 
-    physical_layout1: physical_layout_1 {
+    physical_layout1: physical_layout1 {
         compatible = "zmk,physical-layout";
         display-name = "HHKB_LONG_SPACE";
         kscan = <&kscan0>;
@@ -94,7 +94,7 @@
             ;
     };
 
-    physical_layout2: physical_layout_2 {
+    physical_layout2: physical_layout2 {
         compatible = "zmk,physical-layout";
         display-name = "HHKB_single_space";
         kscan = <&kscan0>;
@@ -141,7 +141,7 @@
             ;
     };
 
-    physical_layout3: physical_layout_3 {
+    physical_layout3: physical_layout3 {
         compatible = "zmk,physical-layout";
         display-name = "HHKB_TRIPLE_SPACE";
         kscan = <&kscan0>;
@@ -188,7 +188,7 @@
             ;
     };
 
-    physical_layout4: physical_layout_4 {
+    physical_layout4: physical_layout4 {
         compatible = "zmk,physical-layout";
         display-name = "WK_DOUBLE_SPACE";
         kscan = <&kscan0>;
@@ -238,7 +238,7 @@
             ;
     };
 
-    physical_layout5: physical_layout_5 {
+    physical_layout5: physical_layout5 {
         compatible = "zmk,physical-layout";
         display-name = "WK_LONG_SPACE";
         kscan = <&kscan0>;
@@ -285,7 +285,7 @@
             ;
     };
 
-    physical_layout6: physical_layout_6 {
+    physical_layout6: physical_layout6 {
         compatible = "zmk,physical-layout";
         display-name = "WK_SINGLE_SPACE";
         kscan = <&kscan0>;
@@ -334,7 +334,7 @@
             ;
     };
 
-    physical_layout7: physical_layout_7 {
+    physical_layout7: physical_layout7 {
         compatible = "zmk,physical-layout";
         display-name = "WK_TRIPLE_SPACE";
         kscan = <&kscan0>;
@@ -383,7 +383,7 @@
             ;
     };
 
-    physical_layout8: physical_layout_8 {
+    physical_layout8: physical_layout8 {
         compatible = "zmk,physical-layout";
         display-name = "WKL_DOUBLE_SPACE";
         kscan = <&kscan0>;
@@ -431,7 +431,7 @@
             ;
     };
 
-    physical_layout9: physical_layout_9 {
+    physical_layout9: physical_layout9 {
         compatible = "zmk,physical-layout";
         display-name = "WKL_LONG_SPACE";
         kscan = <&kscan0>;
@@ -476,7 +476,7 @@
             ;
     };
 
-    physical_layout10: physical_layout_10 {
+    physical_layout10: physical_layout10 {
         compatible = "zmk,physical-layout";
         display-name = "WKL_SINGLE_SPACE";
         kscan = <&kscan0>;
@@ -523,7 +523,7 @@
             ;
     };
 
-    physical_layout11: physical_layout_11 {
+    physical_layout11: physical_layout11 {
         compatible = "zmk,physical-layout";
         display-name = "WKL_TRIPLE_SPACE";
         kscan = <&kscan0>;
