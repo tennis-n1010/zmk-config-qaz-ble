@@ -52,7 +52,7 @@
     physical_layout1: physical_layout_1 {
         compatible = "zmk,physical-layout";
         display-name = "HHKB_LONG_SPACE";
-        kscan = <&kscan1>;
+        kscan = <&kscan0>;
         transform = <&matrix_transform1>;
 
         keys  //                     w   h    x    y     rot    rx    ry
@@ -97,7 +97,7 @@
     physical_layout2: physical_layout_2 {
         compatible = "zmk,physical-layout";
         display-name = "HHKB_single_space";
-        kscan = <&kscan2>;
+        kscan = <&kscan0>;
         transform = <&matrix_transform2>;
 
         keys  //                     w   h    x    y     rot    rx    ry
@@ -144,7 +144,7 @@
     physical_layout3: physical_layout_3 {
         compatible = "zmk,physical-layout";
         display-name = "HHKB_TRIPLE_SPACE";
-        kscan = <&kscan3>;
+        kscan = <&kscan0>;
         transform = <&matrix_transform3>;
 
         keys  //                     w   h    x    y     rot    rx    ry
@@ -191,7 +191,7 @@
     physical_layout4: physical_layout_4 {
         compatible = "zmk,physical-layout";
         display-name = "WK_DOUBLE_SPACE";
-        kscan = <&kscan4>;
+        kscan = <&kscan0>;
         transform = <&matrix_transform4>;
 
         keys  //                     w   h    x    y     rot    rx    ry
@@ -241,7 +241,7 @@
     physical_layout5: physical_layout_5 {
         compatible = "zmk,physical-layout";
         display-name = "WK_LONG_SPACE";
-        kscan = <&kscan5>;
+        kscan = <&kscan0>;
         transform = <&matrix_transform5>;
 
         keys  //                     w   h    x    y     rot    rx    ry
@@ -288,7 +288,7 @@
     physical_layout6: physical_layout_6 {
         compatible = "zmk,physical-layout";
         display-name = "WK_SINGLE_SPACE";
-        kscan = <&kscan6>;
+        kscan = <&kscan0>;
         transform = <&matrix_transform6>;
 
         keys  //                     w   h    x    y     rot    rx    ry
@@ -337,7 +337,7 @@
     physical_layout7: physical_layout_7 {
         compatible = "zmk,physical-layout";
         display-name = "WK_TRIPLE_SPACE";
-        kscan = <&kscan7>;
+        kscan = <&kscan0>;
         transform = <&matrix_transform7>;
 
         keys  //                     w   h    x    y     rot    rx    ry
@@ -386,7 +386,7 @@
     physical_layout8: physical_layout_8 {
         compatible = "zmk,physical-layout";
         display-name = "WKL_DOUBLE_SPACE";
-        kscan = <&kscan8>;
+        kscan = <&kscan0>;
         transform = <&matrix_transform8>;
 
         keys  //                     w   h    x    y     rot    rx    ry
@@ -434,7 +434,7 @@
     physical_layout9: physical_layout_9 {
         compatible = "zmk,physical-layout";
         display-name = "WKL_LONG_SPACE";
-        kscan = <&kscan9>;
+        kscan = <&kscan0>;
         transform = <&matrix_transform9>;
 
         keys  //                     w   h    x    y     rot    rx    ry
@@ -479,7 +479,7 @@
     physical_layout10: physical_layout_10 {
         compatible = "zmk,physical-layout";
         display-name = "WKL_SINGLE_SPACE";
-        kscan = <&kscan10>;
+        kscan = <&kscan0>;
         transform = <&matrix_transform10>;
 
         keys  //                     w   h    x    y     rot    rx    ry
@@ -526,7 +526,7 @@
     physical_layout11: physical_layout_11 {
         compatible = "zmk,physical-layout";
         display-name = "WKL_TRIPLE_SPACE";
-        kscan = <&kscan11>;
+        kscan = <&kscan0>;
         transform = <&matrix_transform11>;
 
         keys  //                     w   h    x    y     rot    rx    ry
