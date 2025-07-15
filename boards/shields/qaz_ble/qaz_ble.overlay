@@ -34,5 +34,6 @@
             /* row-3 */ RC(4,0) RC(4,1) RC(4,2) RC(4,5) RC(4,7) RC(4,8) RC(4,9) RC(4,10)
             /* tactile switches */ RC(0,8) RC(0,9) RC(0,10)
         >;
+    };
 };
 &xiao_serial { status = "disabled"; };
