@@ -8,7 +8,7 @@
         zmk,physical-layout = &qaz_num_ble_macropad_layout;
     };
 
-    qaz_num_ble_numpad_layout: qaz_num_ble_numpad_layout {
+    numpad_layout:numpad_layout {
         compatible = "zmk,physical-layout";
         display-name = "NUMPAD";
         transform = <&default_transform>;
@@ -38,7 +38,7 @@
             ;
     };
 
-    qaz_num_ble_macropad_layout: qaz_num_ble_macropad_layout {
+    macropad_layout: macropad_layout {
         compatible = "zmk,physical-layout";
         display-name = "MACROPAD";
         transform = <&default_transform>;
@@ -67,16 +67,16 @@
             , <&key_physical_attrs 100 100  300  400       0     0     0>
             ;
     };
-    layouts_qaz_num_ble_position_map: layouts_qaz_num_ble_position_map {
+    position_map: position_map {
         compatible = "zmk,physical-layout-position-map";
     
-        qaz_num_ble_numpad_posmap: qaz_num_ble_numpad_posmap {
-        physical-layout = <&qaz_num_ble_numpad_layout>;
+        numpad_posmap: numpad_posmap {
+        physical-layout = <&numpad_layout>;
         positions
                 = <7 14 15>;
         };
-        qaz_num_ble_macropad_posmap: qaz_num_ble_macropad_posmap {
-        physical-layout = <&qaz_num_ble_macropad_layout>;
+        macropad_posmap: macropad_posmap {
+        physical-layout = <&macropad_layout>;
         positions
                 = < 7 15 16>;
         };
