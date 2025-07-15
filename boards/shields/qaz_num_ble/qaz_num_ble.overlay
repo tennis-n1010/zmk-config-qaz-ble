@@ -4,6 +4,15 @@
 #include "qaz_num_ble.dtsi"
 
 / {
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,physical-layout = &macropad_layout;
+        zmk,studio-rpc = &studio_usb;
+    };
+    studio_usb: studio_usb {
+        compatible = "zmk,studio-rpc-usb-uart";
+    };
+    
     kscan0: kscan_0 {
         compatible      = "zmk,kscan-gpio-charlieplex";
         wakeup-source;
