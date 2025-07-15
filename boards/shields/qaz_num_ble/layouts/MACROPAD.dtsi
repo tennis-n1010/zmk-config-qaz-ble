@@ -5,7 +5,7 @@
     qaz_num_ble_macropad_layout: qaz_num_ble_macropad_layout {
         compatible = "zmk,physical-layout";
         display-name = "MACROPAD";
-        transform = <&qaz_num_ble_macropad_transform>;
+        transform = <&qaz_num_ble_default_transform>;
         kscan = <&kscan0>;
         
         keys  //                     w   h    x    y     rot    rx    ry
