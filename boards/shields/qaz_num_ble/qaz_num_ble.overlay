@@ -7,14 +7,23 @@
         wakeup-source;
         #ifdef CONFIG_BOARD_SEEEDUINO_XIAO_BLE
         interrupt-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) >;
-        #endif
         gpios
-          = < &xiao_d 0 GPIO_ACTIVE_HIGH >
-          , < &xiao_d 1 GPIO_ACTIVE_HIGH >
-          , < &xiao_d 2 GPIO_ACTIVE_HIGH >
-          , < &xiao_d 3 GPIO_ACTIVE_HIGH >
-          , < &xiao_d 4 GPIO_ACTIVE_HIGH >
+          = <&gpio0  2 GPIO_ACTIVE_HIGH>
+          , <&gpio0 28 GPIO_ACTIVE_HIGH>
+          , <&gpio0 28 GPIO_ACTIVE_HIGH>
+          , <&gpio1 29 GPIO_ACTIVE_HIGH>
+          , <&gpio1  4 GPIO_ACTIVE_HIGH>
           ; // addressable space is 5x5, (minus paired values)
+          #endif
+          #ifdef CONFIG_BOARD_SEEEDUINO_RP2040
+        gpios
+          = <&gpio0 26 GPIO_ACTIVE_HIGH>
+          , <&gpio0 27 GPIO_ACTIVE_HIGH>
+          , <&gpio0 28 GPIO_ACTIVE_HIGH>
+          , <&gpio1 29 GPIO_ACTIVE_HIGH>
+          , <&gpio1  6 GPIO_ACTIVE_HIGH>
+          ; // addressable space is 5x5, (minus paired values)
+          #endif
     };
 
     qaz_num_ble_default_transform: keymap_transform {
