@@ -3,7 +3,6 @@ include:
    shield: qaz_ble
    snippet: studio-rpc-usb-uart
    cmake-args: -DCONFIG_ZMK_STUDIO=y -DKEYMAP_FILE=../../config/qaz_ble_wk_double_space_layout.keymap
-   artifact-name: qaz_ble_wk_double_space_layout
  - board: seeeduino_xiao_ble
    shield: qaz_ble
    snippet: studio-rpc-usb-uart
