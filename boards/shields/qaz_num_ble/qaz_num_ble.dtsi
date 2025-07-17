@@ -76,7 +76,6 @@
         };
         macropad_posmap: macropad_posmap {
         physical-layout = <&macropad_layout>;
-        positions
             positions = <11 12 13 14 15 16 17 18 19>;
         };
     };
