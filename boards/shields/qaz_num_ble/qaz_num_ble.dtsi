@@ -72,13 +72,12 @@
     
         numpad_posmap: numpad_posmap {
         physical-layout = <&numpad_layout>;
-        positions
-                = <7 14 15>;
+            positions = <19 11 12 13 14 15 18 16 17>;
         };
         macropad_posmap: macropad_posmap {
         physical-layout = <&macropad_layout>;
         positions
-                = < 7 15 16>;
+            positions = <11 12 13 14 15 16 17 18 19>;
         };
     };
 };
