@@ -1,6 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <physical_layouts.dtsi>
-#include "qaz_num_ble-layouts.dtsi"
 / {
     numpad_layout:numpad_layout {
         compatible = "zmk,physical-layout";
