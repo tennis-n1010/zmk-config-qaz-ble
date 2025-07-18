@@ -5,6 +5,7 @@
 
     chosen {
         zmk,physical-layout = &numpad_layout;
+        kscan = <&kscan0>;
     };
 
     kscan0: kscan0 {
