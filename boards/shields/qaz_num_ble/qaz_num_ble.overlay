@@ -2,9 +2,6 @@
 #include "qaz_num_ble.dtsi"
 
 / {
-    chosen {
-        zmk,physical-layout = &numpad_layout;
-    };
 
 };
 &xiao_serial { status = "disabled"; };
