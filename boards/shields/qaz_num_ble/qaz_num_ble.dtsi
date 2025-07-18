@@ -1,4 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <physical_layouts.dtsi>
 #include "qaz_num_ble-layouts.dtsi"
 / {
     compatible = "qaz_num_ble,shield";
