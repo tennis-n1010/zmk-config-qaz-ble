@@ -4,7 +4,7 @@
     numpad_layout:numpad_layout {
         compatible = "zmk,physical-layout";
         display-name = "NUMPAD";
-        transform = <&default_transform0>;
+        transform = <&matrix_transform0>;
         kscan = <&kscan0>;
         
         keys  //                     w   h    x    y     rot    rx    ry
@@ -37,7 +37,7 @@
     macropad_layout: macropad_layout {
         compatible = "zmk,physical-layout";
         display-name = "MACROPAD";
-        transform = <&default_transform>;
+        transform = <&matrix_transform1>;
         kscan = <&kscan0>;
         
         keys  //                     w   h    x    y     rot    rx    ry
