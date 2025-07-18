@@ -4,3 +4,11 @@
 
 
 };
+&numpad_layout {
+    kscan = <&kscan0>; // Label of the kscan node this layout uses
+    transform = <&default_transform0>; // Label of the matrix transform this layout uses
+};
+&macropad_layout {
+    kscan = <&kscan0>; // Label of the kscan node this layout uses
+    transform = <&default_transform>; // Label of the matrix transform this layout uses
+};
