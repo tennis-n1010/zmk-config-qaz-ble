@@ -1,24 +1,11 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "qaz_num_ble-layouts.dtsi"
 / {
-    compatible = "qaz_num_ble,shield";
+
 
     chosen {
         zmk,physical-layout = &numpad_layout;
     };
 
-    kscan0: kscan0 {
-        compatible = "zmk,kscan-gpio-charlieplex";
-        wakeup-source;
 
-        gpios
-          = < &xiao_d 0 GPIO_ACTIVE_HIGH >
-          , < &xiao_d 1 GPIO_ACTIVE_HIGH >
-          , < &xiao_d 2 GPIO_ACTIVE_HIGH >
-          , < &xiao_d 3 GPIO_ACTIVE_HIGH >
-          , < &xiao_d 4 GPIO_ACTIVE_HIGH >
-        ;
-        interrupt-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
-
-    };
 };
