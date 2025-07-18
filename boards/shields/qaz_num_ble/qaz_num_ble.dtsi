@@ -1,17 +1,12 @@
-#include <dt-bindings/zmk/matrix_transform.h>
 #include <physical_layouts.dtsi>
+
 / {
     compatible = "qaz_num_ble,shield";
 
-    chosen {
-        zmk,kscan = &kscan0;
-        zmk,physical-layout = &macropad_layout;
-    };
-
-    numpad_layout:numpad_layout {
+    qaz_num_ble_numpad_layout: qaz_num_ble_numpad_layout {
         compatible = "zmk,physical-layout";
         display-name = "NUMPAD";
-        transform = <&default_transform>;
+        transform = <&qaz_num_ble_default_transform>;
         kscan = <&kscan0>;
         
         keys  //                     w   h    x    y     rot    rx    ry
@@ -38,10 +33,10 @@
             ;
     };
 
-    macropad_layout: macropad_layout {
+        qaz_num_ble_macropad_layout: qaz_num_ble_macropad_layout {
         compatible = "zmk,physical-layout";
         display-name = "MACROPAD";
-        transform = <&default_transform>;
+        transform = <&qaz_num_ble_default_transform>;
         kscan = <&kscan0>;
         
         keys  //                     w   h    x    y     rot    rx    ry
@@ -67,16 +62,24 @@
             , <&key_physical_attrs 100 100  300  400       0     0     0>
             ;
     };
-    position_map: position_map {
+
+    layouts_qaz_num_ble_position_map: layouts_qaz_num_ble_position_map {
         compatible = "zmk,physical-layout-position-map";
-    
-        numpad_posmap: numpad_posmap {
-        physical-layout = <&numpad_layout>;
-            positions = <19 11 12 13 14 15 18 16 17>;
+
+        qaz_num_ble_numpad_posmap: qaz_num_ble_numpad_posmap {
+        physical-layout = <&qaz_num_ble_numpad_layout>;
+        positions
+                = <14 15 19 18>
+                , <17>
+                ;
         };
-        macropad_posmap: macropad_posmap {
-        physical-layout = <&macropad_layout>;
-            positions = <11 12 13 14 15 16 17 18 19>;
+
+        qaz_num_ble_macropad_posmap: qaz_num_ble_macropad_posmap {
+        physical-layout = <&qaz_num_ble_macropad_layout>;
+        positions
+                = <15 16 11 17>
+                , <19>
+                ;
         };
     };
 };
