@@ -4,13 +4,13 @@
     compatible = "qaz_num_ble,shield";
 
     chosen {
-        zmk,physical-layout = &macropad_layout;
+        zmk,physical-layout = &numpad_layout;
     };
 
     numpad_layout:numpad_layout {
         compatible = "zmk,physical-layout";
         display-name = "NUMPAD";
-        transform = <&default_transform>;
+        transform = <&default_transform0>;
         kscan = <&kscan0>;
         
         keys  //                     w   h    x    y     rot    rx    ry
