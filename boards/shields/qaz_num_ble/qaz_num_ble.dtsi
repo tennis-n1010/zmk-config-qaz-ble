@@ -5,6 +5,7 @@
     compatible = "qaz_num_ble,shield";
 
     chosen {
-        zmk,physical-layout = &qaz_num_ble_macropad_layout;
+        zmk,kscan = &kscan0;
+        zmk,physical-layout = &qaz_num_ble_numpad_layout;
     };
 };
