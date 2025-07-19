@@ -4,9 +4,9 @@
 / {
     kscan0: kscan_0 {
         compatible      = "zmk,kscan-gpio-charlieplex";
-        #ifdef CONFIG_BOARD_SEEEDUINO_XIAO_BLE
+
         interrupt-gpios = <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) >;
-        #endif
+
         gpios
           = < &xiao_d 0 GPIO_ACTIVE_HIGH >
           , < &xiao_d 1 GPIO_ACTIVE_HIGH >
