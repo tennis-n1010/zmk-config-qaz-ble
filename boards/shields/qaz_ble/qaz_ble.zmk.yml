@@ -6,3 +6,4 @@ url: https://github.com/tennis-n1010/qaz_ble
 requires: [seeeduino_xiao_ble]
 features:
   - keys
+  - studio
