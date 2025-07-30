@@ -1,0 +1,9 @@
+file_format: "1"
+id: qaz_ble
+name: qaz_ble
+type: shield
+url: https://github.com/tennis-n1010/qaz-ble
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+  - studio

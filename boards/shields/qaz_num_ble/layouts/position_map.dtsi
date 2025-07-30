@@ -1,0 +1,5 @@
+/ {
+    layouts_qaz_num_ble_position_map: layouts_qaz_num_ble_position_map {
+        compatible = "zmk,physical-layout-position-map";
+    };
+};

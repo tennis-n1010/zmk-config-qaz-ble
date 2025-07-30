@@ -1,0 +1,11 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+#include "physical_layouts.dtsi"
+
+/ {
+    compatible = "qaz_num_ble,shield";
+
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,physical-layout = &qaz_num_ble_macropad_layout;
+    };
+};
